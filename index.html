@@ -1,0 +1,518 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Brenda Silva Cosméticos</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Adicionando o CSS do Slick -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      /* Estilos adicionais para o carrossel */
+      .products-slider {
+        margin: 0 auto;
+        max-width: 1200px;
+        padding: 0 20px;
+      }
+      
+      .product-card {
+        background: white;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        margin: 10px;
+        overflow: hidden;
+        transition: transform 0.3s ease;
+      }
+      
+      .product-card:hover {
+        transform: translateY(-5px);
+      }
+      
+      .product-image {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+      }
+      
+      .product-content {
+        padding: 15px;
+      }
+      
+      .slick-center .product-card {
+        transform: scale(1.05);
+      }
+      
+      .slick-prev:before, .slick-next:before {
+        color: #1E1E1E;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page-container">
+      <header class="main-header">
+        <h1 class="brand-name">Brenda Silva Cosméticos</h1>
+        <nav class="main-nav">
+          <a href="#" class="nav-link">Início</a>
+          <a href="#" class="nav-link">Catálogo</a>
+          <a href="#" class="nav-link">Dicas</a>
+        </nav>
+        <div class="cart-container">
+          <svg
+            class="cart-icon"
+            width="33"
+            height="32"
+            viewBox="0 0 33 32"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g clip-path="url(#clip0_7_94)">
+              <path
+                d="M1.375 1.33333H6.875L10.56 19.1867C10.6857 19.8005 11.0301 20.3519 11.5329 20.7444C12.0356 21.1368 12.6647 21.3453 13.31 21.3333H26.675C27.3203 21.3453 27.9494 21.1368 28.4521 20.7444C28.9549 20.3519 29.2993 19.8005 29.425 19.1867L31.625 8H8.25M13.75 28C13.75 28.7364 13.1344 29.3333 12.375 29.3333C11.6156 29.3333 11 28.7364 11 28C11 27.2636 11.6156 26.6667 12.375 26.6667C13.1344 26.6667 13.75 27.2636 13.75 28ZM28.875 28C28.875 28.7364 28.2594 29.3333 27.5 29.3333C26.7406 29.3333 26.125 28.7364 26.125 28C26.125 27.2636 26.7406 26.6667 27.5 26.6667C28.2594 26.6667 28.875 27.2636 28.875 28Z"
+                stroke="#1E1E1E"
+                stroke-width="4"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </g>
+            <defs>
+              <clipPath id="clip0_7_94">
+                <rect width="33" height="32" fill="white" />
+              </clipPath>
+            </defs>
+          </svg>
+        </div>
+      </header>
+
+      <section class="hero-section">
+        <div class="hero-content">
+          <h2 class="hero-title">Corpo bem cuidado, confiança renovada</h2>
+          <p class="hero-description">
+            Confira nossos produtos no catálogo, descubra dicas e potencialize
+            sua beleza!
+          </p>
+          <button class="cta-button">Catálogo</button>
+        </div>
+      </section>
+      
+      <section class="hero-image-section">
+        <img
+          src="https://cdn.builder.io/api/v1/image/assets/TEMP/eaa164568db6fc8332b95031d9df9f3fa4b47c7c"
+          alt="Hero image"
+          class="hero-image"
+        />
+      </section>
+
+      <section class="products-section">
+        <h2 class="section-title">Produtos</h2>
+        <div class="products-slider center">
+          <article class="product-card">
+            <img
+              src="https://cdn.builder.io/api/v1/image/assets/TEMP/906c15cb36b2ffd37cebe709faad2e39fda4772b"
+              alt="Skin care"
+              class="product-image"
+            />
+            <div class="product-content">
+              <h3 class="product-title">Cuidados com a pele</h3>
+              <p class="product-description">
+                para todos os tipos de pele: seca, oleosa, mista ou sensível.
+              </p>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <img
+              src="https://cdn.builder.io/api/v1/image/assets/TEMP/31f6d30feae7b10a6d4748fa75aa67425a23a450"
+              alt="Hair care"
+              class="product-image"
+            />
+            <div class="product-content">
+              <h3 class="product-title">Brilho e saúde em cada fio</h3>
+              <p class="product-description">
+                Transforme seus fios com cuidados que nossos produtos
+                proporcionam.
+              </p>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <img
+              src="https://cdn.builder.io/api/v1/image/assets/TEMP/65b6a9e22c84e017cff17f98c74a3599a909479a"
+              alt="Nail care"
+              class="product-image"
+            />
+            <div class="product-content">
+              <h3 class="product-title">Unhas fortes e impecáveis</h3>
+              <p class="product-description">
+                Tenha unhas saudáveis e prontas para qualquer ocasião.
+              </p>
+            </div>
+          </article>
+          
+          <!-- Adicionando mais itens para demonstrar o carrossel -->
+          <article class="product-card">
+            <img
+              src="https://cdn.builder.io/api/v1/image/assets/TEMP/906c15cb36b2ffd37cebe709faad2e39fda4772b"
+              alt="Skin care 2"
+              class="product-image"
+            />
+            <div class="product-content">
+              <h3 class="product-title">Hidratação Profunda</h3>
+              <p class="product-description">
+                Produtos para hidratação intensiva da pele.
+              </p>
+            </div>
+          </article>
+          
+          <article class="product-card">
+            <img
+              src="https://cdn.builder.io/api/v1/image/assets/TEMP/31f6d30feae7b10a6d4748fa75aa67425a23a450"
+              alt="Hair care 2"
+              class="product-image"
+            />
+            <div class="product-content">
+              <h3 class="product-title">Reparação Capilar</h3>
+              <p class="product-description">
+                Recupere seus fios danificados com nossos tratamentos.
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="info-section">
+        <div class="info-content">
+          <h2 class="section-title">Section heading</h2>
+          <div class="info-blocks">
+            <div class="info-block">
+              <h3 class="info-subtitle">Subheading</h3>
+              <p class="info-text">
+                Body text for whatever you'd like to expand on the main point.
+              </p>
+            </div>
+            <div class="info-block">
+              <h3 class="info-subtitle">Subheading</h3>
+              <p class="info-text">
+                Body text for whatever you'd like to say. Add main takeaway
+                points, quotes, anecdotes.
+              </p>
+            </div>
+            <div class="info-block">
+              <h3 class="info-subtitle">Subheading</h3>
+              <p class="info-text">
+                Body text for whatever you'd like to add more to the main point.
+                It provides details, explanations, and context.
+              </p>
+            </div>
+          </div>
+          <div class="button-group">
+            <button class="primary-button">Button</button>
+            <button class="secondary-button">Secondary button</button>
+          </div>
+        </div>
+        <img
+          src="https://cdn.builder.io/api/v1/image/assets/TEMP/764e452aded8904c00d5a8b834953ea86e060ead"
+          alt="Info section image"
+          class="info-image"
+        />
+      </section>
+
+      <section class="features-section">
+        <h2 class="section-title">Section heading</h2>
+        <div class="features-grid">
+          <article class="feature-card">
+            <img
+              src="https://cdn.builder.io/api/v1/image/assets/TEMP/9aef47e43079ddb979cf6cfc7731187a338b62ef"
+              alt="Feature 1"
+              class="feature-image"
+            />
+            <div class="feature-content">
+              <h3 class="feature-title">Subheading</h3>
+              <p class="feature-description">
+                Body text for whatever you'd like to add more to the subheading.
+              </p>
+            </div>
+          </article>
+          <article class="feature-card">
+            <img
+              src="https://cdn.builder.io/api/v1/image/assets/TEMP/304b7358753040d3bb8dfbbd7b140fac7f14256a"
+              alt="Feature 2"
+              class="feature-image"
+            />
+            <div class="feature-content">
+              <h3 class="feature-title">Subheading</h3>
+              <p class="feature-description">
+                Body text for whatever you'd like to expand on the main point.
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="cta-section">
+        <h2 class="section-title">Section heading</h2>
+        <div class="button-group">
+          <button class="primary-button">Button</button>
+          <button class="secondary-button">Secondary button</button>
+        </div>
+      </section>
+
+      <section class="testimonials-section">
+        <h2 class="section-title">Section heading</h2>
+        <div class="testimonials-grid">
+          <article class="testimonial-card">
+            <p class="testimonial-text">"A terrific piece of praise"</p>
+            <div class="testimonial-author">
+              <svg
+                class="testimonial-avatar"
+                width="149"
+                height="50"
+                viewBox="0 0 149 50"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+              >
+                <circle cx="22.5" cy="25" r="22.5" fill="#D9D9D9" />
+                <circle
+                  cx="22.5"
+                  cy="25"
+                  r="22.5"
+                  fill="url(#pattern0_4_910)"
+                />
+                <text
+                  fill="black"
+                  xml:space="preserve"
+                  style="white-space: pre"
+                  font-family="Inter"
+                  font-size="16"
+                  font-weight="500"
+                  letter-spacing="0em"
+                >
+                  <tspan x="61" y="17.8182">Name</tspan>
+                </text>
+                <text
+                  fill="#828282"
+                  xml:space="preserve"
+                  style="white-space: pre"
+                  font-family="Inter"
+                  font-size="16"
+                  font-weight="500"
+                  letter-spacing="0em"
+                >
+                  <tspan x="61" y="43.8182">Description</tspan>
+                </text>
+                <defs>
+                  <pattern
+                    id="pattern0_4_910"
+                    patternContentUnits="objectBoundingBox"
+                    width="1"
+                    height="1"
+                  >
+                    <use
+                      xlink:href="#image0_4_910"
+                      transform="translate(-0.0809929) scale(0.000283688)"
+                    />
+                  </pattern>
+                </defs>
+              </svg>
+            </div>
+          </article>
+
+          <article class="testimonial-card">
+            <p class="testimonial-text">"A fantastic bit of feedback"</p>
+            <div class="testimonial-author">
+              <svg
+                class="testimonial-avatar"
+                width="150"
+                height="50"
+                viewBox="0 0 150 50"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+              >
+                <circle cx="22.8333" cy="25" r="22.5" fill="#D9D9D9" />
+                <circle
+                  cx="22.8333"
+                  cy="25"
+                  r="22.5"
+                  fill="url(#pattern0_4_917)"
+                />
+                <text
+                  fill="black"
+                  xml:space="preserve"
+                  style="white-space: pre"
+                  font-family="Inter"
+                  font-size="16"
+                  font-weight="500"
+                  letter-spacing="0em"
+                >
+                  <tspan x="61.3333" y="17.8182">Name</tspan>
+                </text>
+                <text
+                  fill="#828282"
+                  xml:space="preserve"
+                  style="white-space: pre"
+                  font-family="Inter"
+                  font-size="16"
+                  font-weight="500"
+                  letter-spacing="0em"
+                >
+                  <tspan x="61.3333" y="43.8182">Description</tspan>
+                </text>
+                <defs>
+                  <pattern
+                    id="pattern0_4_917"
+                    patternContentUnits="objectBoundingBox"
+                    width="1"
+                    height="1"
+                  >
+                    <use
+                      xlink:href="#image0_4_917"
+                      transform="translate(0 -0.00468211) scale(0.000246427)"
+                    />
+                  </pattern>
+                </defs>
+              </svg>
+            </div>
+          </article>
+
+          <article class="testimonial-card">
+            <p class="testimonial-text">"A genuinely glowing review"</p>
+            <div class="testimonial-author">
+              <svg
+                class="testimonial-avatar"
+                width="150"
+                height="50"
+                viewBox="0 0 150 50"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+              >
+                <circle cx="23.1665" cy="25" r="22.5" fill="#D9D9D9" />
+                <circle
+                  cx="23.1665"
+                  cy="25"
+                  r="22.5"
+                  fill="url(#pattern0_4_924)"
+                />
+                <text
+                  fill="black"
+                  xml:space="preserve"
+                  style="white-space: pre"
+                  font-family="Inter"
+                  font-size="16"
+                  font-weight="500"
+                  letter-spacing="0em"
+                >
+                  <tspan x="61.6665" y="17.8182">Name</tspan>
+                </text>
+                <text
+                  fill="#828282"
+                  xml:space="preserve"
+                  style="white-space: pre"
+                  font-family="Inter"
+                  font-size="16"
+                  font-weight="500"
+                  letter-spacing="0em"
+                >
+                  <tspan x="61.6665" y="43.8182">Description</tspan>
+                </text>
+                <defs>
+                  <pattern
+                    id="pattern0_4_924"
+                    patternContentUnits="objectBoundingBox"
+                    width="1"
+                    height="1"
+                  >
+                    <use
+                      xlink:href="#image0_4_924"
+                      transform="translate(0 -0.250183) scale(0.0003663)"
+                    />
+                  </pattern>
+                </defs>
+              </svg>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <footer class="main-footer">
+        <h2 class="footer-brand">Brenda Silva Cosméticos</h2>
+        <div class="social-links">
+          <a href="#" class="social-link"></a>
+          <a href="#" class="social-link"></a>
+          <a href="#" class="social-link"></a>
+          <a href="#" class="social-link"></a>
+        </div>
+        <div class="footer-links">
+          <div class="footer-column">
+            <h3 class="footer-title">Topic</h3>
+            <a href="#" class="footer-link">Page</a>
+            <a href="#" class="footer-link">Page</a>
+            <a href="#" class="footer-link">Page</a>
+          </div>
+          <div class="footer-column">
+            <h3 class="footer-title">Topic</h3>
+            <a href="#" class="footer-link">Page</a>
+            <a href="#" class="footer-link">Page</a>
+            <a href="#" class="footer-link">Page</a>
+          </div>
+          <div class="footer-column">
+            <h3 class="footer-title">Topic</h3>
+            <a href="#" class="footer-link">Page</a>
+            <a href="#" class="footer-link">Page</a>
+            <a href="#" class="footer-link">Page</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <!-- Adicionando as dependências do jQuery e Slick -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    
+    <script>
+      $(document).ready(function(){
+        $('.center').slick({
+          centerMode: true,
+          centerPadding: '60px',
+          slidesToShow: 3,
+          responsive: [
+            {
+              breakpoint: 768,
+              settings: {
+                arrows: false,
+                centerMode: true,
+                centerPadding: '40px',
+                slidesToShow: 3
+              }
+            },
+            {
+              breakpoint: 480,
+              settings: {
+                arrows: false,
+                centerMode: true,
+                centerPadding: '40px',
+                slidesToShow: 1
+              }
+            }
+          ]
+        });
+        
+        const button = document.querySelector('.cta-button');
+      
+        button.addEventListener('click', function() {
+          button.classList.add('jello-horizontal');
+          
+          setTimeout(function() {
+            button.classList.remove('jello-horizontal');
+          }, 900); 
+        });
+      });
+    </script>
+  </body>
+</html>
